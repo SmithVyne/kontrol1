@@ -13,11 +13,14 @@ function App() {
       <main >
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/catalog" component={Catalog} />
-          <Route path="/catalog/car/:id" component={Item} />
+          <Route exact path="/catalog" component={Catalog} />
+          <Route path="/catalog/car/:name/:index" component={Item} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </main>
+      <footer>
+        Copyright Smith {new Date().getFullYear()}. Все права защищены
+      </footer>
     </div>
   );
 }

@@ -9,10 +9,11 @@
 body, #root {
   width: 100%;
   height: 100vh;
+  max-height: max-content;
   background-color: aliceblue;
 }
 
-nav {
+nav, footer {
   width: 100%;
   background-color: black;
   height: max-content;
@@ -23,16 +24,106 @@ nav {
 }
 
 
-nav a {
+nav a, footer {
   color: #fff;
-  text-decoration: none;
   font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  outline: none;
   font-size: 17px;
 }
 
+footer {
+  font-size: 15px;
+}
 
 
 body, main {
   width: 100%;
   height: 100%;
+}
+
+.home-cat-item {
+  width: 100%;
+}
+
+.home-cat-item, .home-cat-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-cat-item img {
+  width: 80%;
+}
+
+.home-cat-more {
+  flex-direction: column;
+}
+
+.home-cat-more a {
+  color: #000;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid;
+  text-decoration: none;
+}
+
+.cat-item {
+  display: block;
+  margin-top: 40px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.cat-item:hover {
+  background-color: rgba(203, 210, 216, 0.1);
+}
+
+.cat-item-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-item img {
+  width: 70%;
+}
+
+.cat-item-name {
+  font-size: 35px;
+  color: #000;
+}
+
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: max-content;
+  margin: 80px auto;
+  justify-content: space-around;
+  background-color: black;
+  color: #fff;
+  padding: 30px 0;
+  border-radius: 50px 0;
+}
+
+form.contact-form * {
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  outline: none;
+  height: 35px;
+  border: none;
+}
+
+form.contact-form textarea {
+  height: 200px;
+}
+
+form.contact-form input[type="submit"] {
+  width: max-content;
 }

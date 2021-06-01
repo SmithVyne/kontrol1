@@ -5,7 +5,7 @@ import logo from '../images/porsche-svg.svg'
 export default function Nav() {
     return (
         <>
-            <img src={logo} />
+            <img alt="logo" src={logo} />
             <p>Россия</p>
             <nav>
                 <NavLink to='/'>Главная</NavLink>
